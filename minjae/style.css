@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "OneStoreMobilePop";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+  font-family: "OneStoreMobilePop", cursive;
+}
+
+.typing-css {
+  border-right: 3px solid rgb(255, 222, 222);
+
+  font-size: 3rem;
+  animation:
+    blink 0.5s infinite,
+    typing 3s steps(16);
+  /* width: 0; */
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgb(255, 222, 222);
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 635px;
+  }
+}
+
+.section-common {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1 {
+  background: #9c9c9c;
+  background: linear-gradient(
+    90deg,
+    rgba(156, 156, 156, 1) 0%,
+    rgba(153, 153, 153, 1) 50%,
+    rgba(69, 69, 69, 1) 100%
+  );
+}
+.section2 {
+  background: #9c9c9c;
+  background: linear-gradient(
+    90deg,
+    rgba(156, 156, 156, 1) 0%,
+    rgba(153, 153, 153, 1) 50%,
+    rgba(69, 69, 69, 1) 100%
+  );
+}
+.div-common {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.img {
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.ul-li {
+  font-size: 2rem;
+  line-height: 100px;
+}
+
+.info-div {
+  margin-left: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back_svg {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  color: white;
+}
