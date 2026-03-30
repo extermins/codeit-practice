@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+.black-han-sans-regular {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body,
 div,
@@ -135,4 +147,141 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* ============================================================== */
+/* 여기서 부터 CSS 작성  */
+a {
+  color: white;
+  text-decoration: none;
+}
+.section-intro {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 300px;
+  height: auto;
+  margin: auto auto;
+  border-style: solid;
+  border-radius: 16px;
+  border-width: 2px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-color: black;
+}
+
+/* Header Css */
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.header-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.back-btn {
+  position: absolute;
+  left: 30px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.back-btn-link {
+  display: contents;
+}
+
+.header-intro {
+  font-size: 40px;
+}
+
+.under-line {
+  display: flex;
+  margin-top: 10px;
+  background-color: black;
+  border-style: solid;
+  height: 3px;
+  width: 100vw;
+}
+
+/* main css */
+
+main {
+  padding-top: 100px;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.section-intro {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+}
+
+.personal-info h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.favorite-info h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.hate-info h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+/* footer css */
+
+/* //footer 아래 고정 */
+#wrap {
+  min-height: calc(100vh - 10rem); /* footer 높이를 빼준다. */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 8rem; /* footer 높이 */
+  background: rgb(125, 130, 131);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
 }

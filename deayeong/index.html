@@ -3,7 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>김대영 소개페이지</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header-main">
+        <a class="back-btn-link" href="../index.html">
+          <img
+            class="back-btn"
+            src="./images/back-arrow.png"
+            alt="뒤로가기 버튼"
+          />
+        </a>
+
+        <h1 class="black-han-sans-regular header-intro">김대영은 누구인가?</h1>
+      </div>
+      <div class="under-line"></div>
+    </header>
+
+    <main>
+      <div class="dongle-regular">
+        <section class="section-intro personal-info">
+          <h3>인적사항</h3>
+          <p>
+            이름 : 김대영<br />
+            나이 : 23살<br />
+            성별 : 남자<br />
+            특이사항 : 전 Android 개발자
+          </p>
+        </section>
+
+        <section class="section-intro favorite-info">
+          <h3>좋아 하는거</h3>
+          <p>
+            과일 : 파인애플 <br />
+            음식 : 불닭, 제육, 삼겹살<br />
+            취미 : 게임, 소설 읽기<br />
+            운동 : 달리기, 등 운동, 하체
+          </p>
+        </section>
+
+        <section class="section-intro hate-info">
+          <h3>싫어 하는거</h3>
+          <p>
+            과일 : 없음 <br />
+            음식 : 어패류,생선(회는 잘 먹어요!)<br />
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- //main 및 footer 사이의 여백  지우면 안됩니다. 푸터가 하단 고정이 안됩니다.-->
+    <div id="wrap"></div>
+
+    <footer>
+      <ul class="footer-nav">
+        <li>
+          <a
+            class="logo"
+            href="https://github.com/daeyeong1573"
+            target="_blank"
+          >
+            <img src="./images/github-logo.png" alt="github" />
+            Github
+          </a>
+        </li>
+        <li>
+          <a class="logo" href="https://velog.io/@daeyeong1573/posts">
+            <img
+              src="https://pbs.twimg.com/profile_images/1228368893321736193/Ov0og7E8_400x400.jpg"
+              alt="velog 로고"
+            />velog</a
+          >
+        </li>
+        <li>
+          <a class="logo" href="https://www.instagram.com/daeyeong0503/">
+            <img src="./images/instagram-logo.png" alt="인스타그램 로고" />
+            Instagram</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
